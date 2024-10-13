@@ -1,0 +1,78 @@
+{
+  "name": "mordecai-cli",
+  "version": "0.0.3",
+  "type": "commonjs",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "cross-env NODE_PATH=./node_modules ts-node src/index.ts"
+  },
+  "keywords": [
+    "mordecai",
+    "cli",
+    "javascript",
+    "programming",
+    "assistant"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^5.3.0",
+    "chalk": "^4.1.2",
+    "chokidar": "^3.6.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "esprima": "^4.0.1",
+    "estraverse": "^5.3.0",
+    "fs": "^0.0.1-security",
+    "ignore": "^5.3.1",
+    "keytar": "^7.9.0",
+    "open": "^10.1.0",
+    "tree-sitter": "^0.21.1",
+    "tree-sitter-javascript": "^0.21.3",
+    "tree-sitter-json": "^0.23.0",
+    "tree-sitter-rust": "^0.23.0",
+    "tree-sitter-typescript": "^0.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.6",
+    "ts-node": "^10.0.0"
+  },
+  "bin": {
+    "mordecai": "./dist/src/index.js"
+  },
+  "random": {
+    "@inquirer/prompts": "^5.3.0",
+    "chalk": "^4.1.2",
+    "chokidar": "^3.6.0",
+    "commander": "^12.1.0",
+    "esprima": "^4.0.1",
+    "estraverse": "^5.3.0",
+    "fs": "^0.0.1-security",
+    "ignore": "^5.3.1",
+    "keytar": "^7.9.0",
+    "open": "^10.1.0",
+    "tree-sitter": "^0.21.1",
+    "tree-sitter-javascript": "^0.21.3"
+  },
+  "random-more": {
+    "@inquirer/prompts": "^5.3.0",
+    "chalk": "^4.1.2",
+    "chokidar": "^3.6.0",
+    "commander": "^12.1.0",
+    "esprima": "^4.0.1",
+    "estraverse": "^5.3.0",
+    "fs": "^0.0.1-security",
+    "ignore": "^5.3.1",
+    "keytar": "^7.9.0",
+    "open": "^10.1.0",
+    "tree-sitter": "^0.21.1",
+    "tree-sitter-javascript": "^0.21.3"
+  }
+}
