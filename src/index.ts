@@ -18,6 +18,7 @@ dotenv.config();
   console.log(process.env.SITE_URL);
   const path = argv[2]; // Get the directory path from the command-line arguments
 
+
   if (path === "logout") {
     deleteToken();
   } else if (path === "link") {
@@ -115,6 +116,22 @@ dotenv.config();
         response.statusText,
       );
     }
+  } else if (path === "--help" || path === "-h") {
+
+    console.log(`
+Mordecai CLI - Connect your codebase with your Mordecai account
+
+Usage: mordecai [command]
+
+Commands:
+  link       Link your local project to Mordecai
+  logout     Remove stored authentication token
+  --help     Display this help message
+
+Examples:
+  mordecai link
+  mordecai logout
+  mordecai --help`)
   } else {
     console.log("Please provide an action.");
   }
