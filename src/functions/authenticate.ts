@@ -1,7 +1,6 @@
 import Spinner from "./spinner";
 import startLocalServer from "./startLocalServer";
 import openBrowser from "./openBrowser";
-import { PRODUCTION_ENDPOINT } from '../../config';
 async function authenticate() {
   const port = 8300;
   const authUrl = `${process.env.SITE_URL}/auth/cli?port=${port}`;

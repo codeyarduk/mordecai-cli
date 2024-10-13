@@ -1,9 +1,7 @@
 import chokidar from "chokidar";
 import path from "path";
 import chalk from "chalk";
-// import chunkFile from "./readFiles/chunkFile.js";
 import processFiles from "./parseCode/chunkFiles";
-import { PRODUCTION_ENDPOINT } from '../../config';
 async function watchDirectory(
   directoryPath: string,
   remote: string,
